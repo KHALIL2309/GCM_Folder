@@ -1,0 +1,14 @@
+.navbar {
+    --bs-bg-opacity: 1;
+    background-color: #ff0000 !important;
+}
+
+.nav-link{
+    color: aliceblue;
+    font-size: larger;
+}
+
+.nav-link:hover{
+    color: aliceblue;
+    font-size: x-large;
+}

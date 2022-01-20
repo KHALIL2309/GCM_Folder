@@ -1,0 +1,132 @@
+
+  {% extends 'cabinetMedical/main.html' %} 
+
+  
+  {% block content %}
+  <h1>projet3</h1>
+
+     <form action="" method="POST">
+         {% csrf_token %}
+          <div  style="border: 2px black solid; margin: 10px 30%; padding:20px 20px ;  ">
+            
+                  
+          <div class="form-group col-12 my-1 mt-sm-4 registration-header">
+            <h3> Les Informations du patient </h3> <br>
+          </div>
+          <table class="tabl">
+            <tr>
+              <th>
+                <div class="form-group col-12 col-md-6 has-float-label mt-2 has-feedback has-feedback-left ">
+                  {{form.Nom}}   
+                  <label style="display: block;">Nom*</label>  
+                </div>
+              </th>
+
+              <th>
+                <div class="form-group col-12 col-md-6 has-float-label mt-2 has-feedback has-feedback-left">
+                  {{form.Prenom}}   <label style="display: block;">Prenom*</label>    
+                </div>
+              </th>
+            </tr>
+           
+            <tr>
+              <th>
+                <div class="form-group col-12 col-md-6 has-float-label mt-2 has-feedback has-feedback-left">
+                  
+                 <input type="date" {{form.DateNaissance}}>    <label style="display: block;">Date Naissance*</label>    
+                </div>
+              </th>
+
+              <th>
+                <div class="form-group col-12 col-md-6 has-float-label mt-2 has-feedback has-feedback-left">
+                  {{form.Poids}} <label style="display: block;">Poids*</label>    
+                </div>
+              </th>
+            </tr>
+
+            <tr>
+              <th>
+                <div class="form-group col-12 col-md-6 has-float-label mt-2 has-feedback has-feedback-left">
+                  {{form.Taille}} <label style="display: block;"></label>Taille*</label>    
+                </div>
+              </th>
+              
+              <th>
+                <div class="form-group col-12 col-md-6 has-float-label mt-2 has-feedback has-feedback-left">
+                  {{form.Adresse}} <label style="display: block;"></label> Adresse*</label>    
+                </div>
+              </th>
+            </tr>
+
+            <tr>
+              <th>
+                <div class="form-group col-12 col-md-6 has-float-label mt-2 has-feedback has-feedback-left">
+                  {{form.Ville}} <label style="display: block;">Ville*</label>    
+                </div>
+              </th>
+
+              <th>
+                <div class="form-group col-12 col-md-6 has-float-label mt-2 has-feedback has-feedback-left">
+                  {{form.Pays}} <label style="display: block;">Pays*</label>    
+                </div>
+              </th>
+            </tr>
+
+            <tr>
+              <th>
+                <div class="form-group col-12 col-md-6 has-float-label mt-2 has-feedback has-feedback-left">
+                  {{form.CodePostal}}<label >CodePostal*</label>    
+                </div>
+              </th>
+
+              <th>
+                <div class="form-group col-12 col-md-6 has-float-label mt-2 has-feedback has-feedback-left">
+                  {{form.Tel1}} <label >Tel1*</label>    
+                </div>
+              </th>
+            </tr>
+
+            <tr>
+              <th>
+                <div class="form-group col-12 col-md-6 has-float-label mt-2 has-feedback has-feedback-left">
+                  {{form.Tel2}} *<label>Tel2 </label>    
+                </div>
+              </th>
+            </tr>
+
+            <tr>
+              <th>
+                <div class="form-group col-12 col-md-6 has-float-label mt-2 has-feedback has-feedback-left">
+                  {{form.Mutuelle}} *<label>Mutuelle* </label>    
+                </div>
+              </th>
+            </tr>
+
+            <tr>
+              <th>
+                <div class="form-group col-12 col-md-6 has-float-label mt-2 has-feedback has-feedback-left">
+                  {{form.Photo}} *<label>Photo </label>    
+                </div>
+              </th>
+            </tr>
+
+             <tr>
+              <th>
+                <input type="radio" value="M" name="rd1">
+            <label style="font-size:x-large ;">M</label>
+            <input type="radio" value="F" name="rd1">
+            <label style="font-size:x-large ;" >F</label><br>
+              </th>
+            </tr>
+          
+          </table>     
+       
+    </div> 
+         <button type="submit" class="btn btn-primary mb-3">submit</button>
+
+     </form>
+
+{% endblock  %}
+              
+             
+  
